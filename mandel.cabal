@@ -1,0 +1,13 @@
+Name:                mandel
+Version:             0.1
+Description:         Mandelbrot drawing
+License:             GPL
+License-file:        LICENSE
+Author:              Pek Daniel
+Maintainer:          pekdaniel@gmail.com
+Build-Type:          Simple
+Cabal-Version:       >=1.2
+Executable mandel
+  Main-is:           mandel.hs
+  Build-Depends:     base >= 3 && < 5, gd, parallel-io
+  ghc-options:       -rtsopts -O2 -threaded
